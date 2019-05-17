@@ -1,8 +1,8 @@
 class TweetsController < ApplicationController
-
+  skip_before_action :authorized, only: [:index, :show]
     def index
         @tweets = Tweet.all
-        render json: @tweet
+        render json: @tweets
     end
 
     def create

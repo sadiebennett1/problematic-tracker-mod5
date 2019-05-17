@@ -1,5 +1,5 @@
 class CelebritiesController < ApplicationController
-
+  skip_before_action :authorized, only: [:index, :show]
     def index
         @celebrities = Celebrity.all
         render json: @celebrities

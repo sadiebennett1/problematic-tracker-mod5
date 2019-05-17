@@ -13,4 +13,4 @@ sadie = User.create(username: 'sadie', password: '123')
 
 miley = Celebrity.create(name: 'Miley Cyrus', score: 0, occupation: 'singer')
 
-tweet = Tweet.create(content: 'Im tweeting', score: 5, celeb_id: miley.id, user_id: sadie.id)
+tweet = Tweet.create(content: 'Im tweeting', score: 5, celebrity_id: miley.id, user_id: sadie.id, url: "https://twitter.com/muhtanya/status/1128718514808692736", offense: "Racism", approval: true)
