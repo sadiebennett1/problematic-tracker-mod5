@@ -20,6 +20,6 @@ class CelebritiesController < ApplicationController
 private
 
     def celebrity_params
-        params.permit(:name, :score, :occupation)
+        params.permit(:name, :score, :img, :occupation)
     end
 end
