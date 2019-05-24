@@ -9,7 +9,7 @@ Celebrity.destroy_all
 Tweet.destroy_all
 User.destroy_all
 
-sadie = User.create(username: 'sadie', password: '123')
+sadie = User.create(first_name: "Sadie", last_name: "Benett", username: 'sadie', password: '123')
 
 # miley = Celebrity.create(name: 'Miley Cyrus', score: 0, occupation: 'singer', img: "https://www.indiewire.com/wp-content/uploads/2018/12/shutterstock_9665158vf.jpg?w=780")
 roseanne = Celebrity.create(name: 'Roseanne Barr', score: 0, occupation: 'actress', img:"https://cbsnews1.cbsistatic.com/hub/i/2018/05/29/5dca181a-6ff7-496b-8ce9-eb09c79d6d40/gettyimages-937215126.jpg")
